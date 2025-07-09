@@ -125,6 +125,7 @@ const VideoRecorder: React.FC = () => {
         
         if (recordedVideoRef.current) {
           const url = URL.createObjectURL(blob);
+          console.log(url)
           recordedVideoRef.current.src = url;
           recordedVideoRef.current.load(); // Force reload
         }
